@@ -1,0 +1,120 @@
+
+/* Configuración del cuerpo de la página */
+.body {
+    font-family: 'Inter', sans-serif; /* Tipografía principal */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0); /* Fondo negro */
+    color: rgb(255, 255, 255); /* Texto blanco */
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    justify-content: center; /* Alineación vertical centrada */
+    align-items: center; /* Alineación horizontal centrada */
+    min-height: 100vh; /* Altura mínima de la ventana gráfica */
+}
+
+/* Estilos del contenedor principal */
+.main {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Alineación horizontal centrada */
+    align-items: center; /* Alineación vertical centrada */
+    width: 100%; /* Ancho completo */
+}
+
+/* Estilos de la sección de perfil */
+.profile {
+    text-align: center; /* Texto centrado */
+    padding: 32px; /* Espaciado interno */
+    margin: 50px;
+    border: 1px solid rgb(51, 51, 51); /* Borde gris oscuro */
+    border-radius: 16px; /* Bordes redondeados */
+    background-color: rgb(34, 34, 34); /* Fondo gris oscuro */
+    max-width: 400px; /* Ancho máximo */
+    width: 90%; /* Ancho relativo */
+}
+
+/* Estilo de la imagen de perfil */
+.profile__avatar {
+    width: 150px; /* Ancho de la imagen */
+    height: 150px; /* Altura de la imagen */
+    border-radius: 50%; /* Imagen redonda */
+    margin-bottom: 16px; /* Espacio inferior */
+    object-fit: cover; /* se redimensiona la imagen manteniendo su relación de aspecto, sin embargo, se redimensionará para que no deje ningún espacio vacío en el contenedor */
+    }
+
+/* Estilo del nombre */
+.profile__name {
+    font-size: 24px; /* Tamaño de fuente */
+    margin-bottom: 8px; /* Espacio inferior */
+}
+
+/* Estilo de la ubicación */
+.profile__location {
+    margin: 8px 0; /* Espaciado superior e inferior */
+    color: rgb(173, 255, 47); /* Color amarillo opaco */
+}
+
+/* Estilo de la biografía */
+.profile__bio {
+    margin: 8px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilos de la lista de enlaces sociales */
+.profile__social-links {
+    list-style: none; /* Eliminar viñetas de lista */
+    padding: 0; /* Eliminar espaciado interno */
+    display: flex; /* Flexbox para disposición de enlaces */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    gap: 8px; /* Espaciado entre elementos */
+}
+
+/* Estilo de los ítems de la lista de enlaces sociales */
+.social-links__item {
+    margin: 0; /* Sin margen */
+    }
+
+/* Estilos de los enlaces sociales */
+.social-links__link {
+    display: block; /* Comportamiento de bloque para enlaces */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: rgb(51, 51, 51); /* Fondo gris oscuro */
+    color: rgb(255, 255, 255); /* Texto blanco */
+    text-decoration: none; /* Sin subrayado */
+    border-radius: 8px; /* Bordes redondeados */
+    cursor: pointer; /* Puntero de mano */
+    transition: background-color 0.3s;
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+    background-color: rgb(173, 255, 47); /* Fondo amarillo opaco en hover */
+    color: rgb(0, 0, 0); /* Texto negro en hover */
+}
+
+/* Estilos del footer */
+.footer {
+    display: flex; /* Flexbox para centrar contenido */
+    justify-content: center; /* Alineación horizontal centrada */
+    align-items: center; /* Alineación vertical centrada */
+    width: 100%; /* Ancho completo */
+    text-align: center;
+    padding: 16px; /* Espaciado superior e inferior */
+    background-color: rgb(34, 34, 34); /* Fondo gris oscuro */
+    border-top: 1px solid rgb(51, 51, 51); /* Borde superior gris oscuro */
+}
+
+/* Estilo del contenido de atribución en el footer */
+.footer__attribution {
+    font-size: 11px; /* Tamaño de fuente */
+    text-align: center; /* Texto centrado */
+}
+
+.footer__attribution a {
+    color: rgb(173, 255, 47); /* Color amarillo opaco para enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.footer__attribution a:hover,
+.footer__attribution a:focus {
+    text-decoration: underline; /* Con subrayado */
+}
